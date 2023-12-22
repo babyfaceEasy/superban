@@ -1,0 +1,31 @@
+{
+    "name": "babyfaceeasy/superban",
+    "description": "Provides the ability to ban a client completely for a period of time.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olakunle Odegbaro",
+            "email": "oodegbaro@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Babyfaceeasy\\Superban\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Babyfaceeasy\\Superban\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Babyfaceeasy\\Superban\\SuperbanServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.18"
+    }
+}
